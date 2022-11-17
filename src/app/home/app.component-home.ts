@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-home',
+  templateUrl: 'app.component-home.html',
+  styleUrls: ['app.component-home.css']
 })
 export class AppComponent {
   title = 'portfolioHelori';
