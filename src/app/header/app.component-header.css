@@ -1,0 +1,63 @@
+header{
+    background-color:  var(--space-cadet) !important;
+    border-bottom: 1px solid var(--rich-black-fogra-39);
+}
+
+nav{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+nav a{
+    padding: 2vh 2vw 2vh 2vw;
+    text-decoration: none;
+}
+
+nav a:hover .sub-menu a{ /*S'il y a un enfant */
+    display: flex ;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--space-cadet) !important;
+}
+
+.sub-menu{
+    position: absolute;
+    margin-top: 4.5vh;
+}
+
+.sub-menu a{
+    /* display: none; */
+}
+
+
+
+
+/* Animation */
+
+nav div a:hover{
+    color: white;
+}
+
+span{
+    position: relative;
+    padding: 3vh 0vw 3vh 0vw;
+    letter-spacing: 0.5px;
+}
+
+span:after{
+    content: "";
+    position: absolute;
+    background-color: aliceblue;
+    height: 2px;
+    width: 0%;
+    left: 0;
+    bottom: 2vh;
+    transition: 0.3s;
+}
+
+span:hover:after{
+    width: 100%;
+}
